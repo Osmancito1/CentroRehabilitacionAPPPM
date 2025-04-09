@@ -1,20 +1,13 @@
 package com.example.clinicadiseo.Components
-import HomeScreen
-import LoginScreen
-import androidx.compose.material3.Text
+
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.example.clinicadiseo.pantallas.BodegasScreen
-import com.example.clinicadiseo.pantallas.CitasScreen
-import com.example.clinicadiseo.pantallas.ComprasScreen
-import com.example.clinicadiseo.pantallas.DiagnosticoScreen
-import com.example.clinicadiseo.pantallas.EncargadosScreen
-import com.example.clinicadiseo.pantallas.PacientesScreen
-import com.example.clinicadiseo.pantallas.ProductosScreen
-import com.example.clinicadiseo.pantallas.TerapeutasScreen
-import com.example.clinicadiseo.pantallas.UsuariosScreen
+import com.example.clinicadiseo.pantallas.*
+import com.example.clinicadiseo.pantallasprincipales.LoginScreen
+import com.example.clinicadiseo.screens.HomeScreen
+import com.example.clinicadiseo.screens.Screen
 
 @Composable
 fun AppNavigation(navController: NavHostController) {
@@ -26,12 +19,16 @@ fun AppNavigation(navController: NavHostController) {
         composable(Screen.Pacientes.route) { PacientesScreen() }
         composable(Screen.Encargados.route) { EncargadosScreen() }
         composable(Screen.Terapeutas.route) { TerapeutasScreen() }
-        composable(Screen.Diagnosticos.route) { DiagnosticoScreen() }
+        composable(Screen.Diagnosticos.route) { DiagnosticosScreen() }
         composable(Screen.Citas.route) { CitasScreen() }
         composable(Screen.Productos.route) { ProductosScreen() }
-        composable(Screen.Compras.route) { ComprasScreen() }
-        composable(Screen.Prestamos.route) { Text("Pantalla de Préstamos") } // temporal
+        composable(Screen.Compras.route) { ComprasScreen(navController) }
+        composable(Screen.Prestamos.route) { PrestamosScreen() }
         composable(Screen.Bodegas.route) { BodegasScreen() }
         composable(Screen.Usuarios.route) { UsuariosScreen() }
+        composable("compras_form/{id}") { backStackEntry ->
+            ComprasFormScreen(navController = navController, backStackEntry = backStackEntry)
+        }
+
     }
 }
