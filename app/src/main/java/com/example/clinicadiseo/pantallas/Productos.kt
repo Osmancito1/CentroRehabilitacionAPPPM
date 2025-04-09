@@ -231,18 +231,18 @@ fun ProductosScreen() {
                                     )
 
                                     Row {
-                                        Text("Descripción: ", fontFamily = poppins, color = Color.Black)
-                                        Text(producto.descripcion, fontFamily = poppinsbold, color = Color.Black)
+                                        Text("Descripción: ", fontFamily = poppinsbold, color = Color.Black)
+                                        Text(producto.descripcion, fontFamily = poppins, color = Color.Black)
                                     }
 
                                     Row {
-                                        Text("Categoría: ", fontFamily = poppins, color = Color.Black)
-                                        Text(producto.categoria, fontFamily = poppinsbold, color = Color.Black)
+                                        Text("Categoría: ", fontFamily = poppinsbold, color = Color.Black)
+                                        Text(producto.categoria, fontFamily = poppins, color = Color.Black)
                                     }
 
                                     Row {
-                                        Text("Cantidad Disponible: ", fontFamily = poppins, color = Color.Black)
-                                        Text(producto.cantidad_disponible.toString(), fontFamily = poppinsbold, color = Color.Black)
+                                        Text("Cantidad Disponible: ", fontFamily = poppinsbold, color = Color.Black)
+                                        Text(producto.cantidad_disponible.toString(), fontFamily = poppins, color = Color.Black)
                                     }
 
                                     Row(

@@ -224,13 +224,13 @@ fun UsuariosScreen() {
                                     Spacer(modifier = Modifier.height(4.dp))
 
                                     Row {
-                                        Text("Email: ", fontFamily = poppins, color = Color.Black)
-                                        Text(usuario.email, fontFamily = poppinsbold, color = Color.Black)
+                                        Text("Email: ", fontFamily = poppinsbold, color = Color.Black)
+                                        Text(usuario.email, fontFamily = poppins, color = Color.Black)
                                     }
 
                                     Row {
-                                        Text("Rol: ", fontFamily = poppins, color = Color.Black)
-                                        Text(usuario.rol, fontFamily = poppinsbold, color = Color.Black)
+                                        Text("Rol: ", fontFamily = poppinsbold, color = Color.Black)
+                                        Text(usuario.rol, fontFamily = poppins, color = Color.Black)
                                     }
 
                                     Spacer(modifier = Modifier.height(6.dp))

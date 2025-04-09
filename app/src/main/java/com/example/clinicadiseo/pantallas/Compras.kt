@@ -268,11 +268,11 @@ fun ComprasScreen(navController: NavController) {
                 Column {
                     Row {
                         Text("Donante: ", fontFamily = poppinsbold, color = Color(0xFF1A5D1A))
-                        Text(compra.donante, fontFamily = poppinsbold, color = Color.Black)
+                        Text(compra.donante, fontFamily = poppins, color = Color.Black)
                     }
                     Row {
                         Text("Fecha: ", fontFamily = poppinsbold, color = Color(0xFF1A5D1A))
-                        Text(compra.fecha, fontFamily = poppinsbold, color = Color.Black)
+                        Text(compra.fecha, fontFamily = poppins, color = Color.Black)
                     }
                     Spacer(modifier = Modifier.height(8.dp))
                     Text("Productos:", fontFamily = poppinsbold, color = Color(0xFF1A5D1A))
