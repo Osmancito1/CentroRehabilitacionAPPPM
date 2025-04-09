@@ -7,8 +7,8 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClient {
-    //private const val BASE_URL = "https://api-production-aeda.up.railway.app/" // Cambios en la API que hay que subir
-    private const val BASE_URL = "http://192.168.0.7:3002/"
+    //private const val BASE_URL = "https://api-production-aeda.up.railway.app/"
+    private const val BASE_URL = "http://192.168.0.7:3002/" //CAMBIAR LA DIRECCION IP POR IP LOCAL (HACER IPCONFIG EN LA TERMINAL)
 
 
     private val logging = HttpLoggingInterceptor().apply {
